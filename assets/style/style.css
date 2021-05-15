@@ -1,0 +1,21 @@
+
+
+.welcome {
+    display: flex;
+    justify-content: center;
+
+}
+
+.description {
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
