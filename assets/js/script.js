@@ -3,9 +3,9 @@ var timerEl = document.getElementById('countdown');
 var body = document.body
 
 initbutton.onclick = function () {
+    var timeLeft = 60;
 
     function countdown() {
-        var timeLeft = 60;
       
         var timeInterval = setInterval(function() {
           if (timeLeft > 1) {
@@ -49,28 +49,23 @@ optionsEl.appendChild(btn3);
 optionsEl.appendChild(btn4);
 
 //what button answers do 
+btn1.addEventListener('click', function() {
+    body.removeChild(divEl);
+    timeLeft -= 8 ;
+});
+btn2.addEventListener('click', function() {
+    window.alert("that is wrong!")
+    body.removeChild(divEl);
+    timeLeft -= 8 ;});
+btn3.addEventListener('click', function() {
+    window.alert("that is wrong!")
+    body.removeChild(divEl);
+    timeLeft -= 8 ;});
 btn4.addEventListener('click', function() {
-    window.alert("that is correct!")
-    return question1(); 
+    window.alert("that is correct!");
+    body.removeChild(divEl);
 //add a point to score
   });
-  btn4.addEventListener('click', function() {
-    window.alert("that is correct!")
-//subtract time to timer
-  });
-  btn1.addEventListener('click', function() {
-    window.alert("that is wrong!")
-//subtract time to timer
-  });
-  btn2.addEventListener('click', function() {
-    window.alert("that is wrong!")
-//subtract time to timer
-  });
-  btn3.addEventListener('click', function() {
-    window.alert("that is wrong!")
-//subtract time to timer
-  });
-
 }
 question1 ();
 
