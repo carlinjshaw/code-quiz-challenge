@@ -15,7 +15,7 @@ initbutton.onclick = function () {
  
 body.removeChild(initbutton);
 //timer  
-var timeLeft = 10;
+var timeLeft = 60;
 function countdown() {
     
     var timeInterval = setInterval(function() {
